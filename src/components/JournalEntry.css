@@ -1,0 +1,175 @@
+.journal-interface {
+  width: 500px;
+  padding: 32px;
+  border-radius: var(--visionos-radius-large);
+  box-shadow: var(--visionos-shadow);
+}
+
+.journal-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.journal-header h2 {
+  margin: 0 0 8px 0;
+}
+
+.date {
+  color: var(--visionos-text-secondary);
+  font-size: 14px;
+}
+
+.mood-section {
+  margin-bottom: 24px;
+}
+
+.mood-section h3 {
+  margin: 0 0 16px 0;
+}
+
+.mood-options {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mood-button {
+  background: var(--visionos-surface);
+  border: 2px solid var(--visionos-border);
+  border-radius: var(--visionos-radius);
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 80px;
+}
+
+.mood-button.selected {
+  border-color: var(--visionos-primary);
+  background: var(--visionos-surface-variant);
+}
+
+.mood-button:hover {
+  border-color: var(--visionos-primary);
+  transform: translateY(-2px);
+}
+
+.mood-emoji {
+  font-size: 24px;
+}
+
+.mood-label {
+  font-size: 12px;
+  color: var(--visionos-text-secondary);
+  font-weight: 500;
+}
+
+.entry-section {
+  margin-bottom: 24px;
+}
+
+.entry-section h3 {
+  margin: 0 0 12px 0;
+}
+
+.journal-textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.action-button {
+  background: var(--visionos-surface);
+  border: 1px solid var(--visionos-border);
+  border-radius: var(--visionos-radius);
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--visionos-text-primary);
+  min-width: 80px;
+}
+
+.action-button:hover {
+  background: var(--visionos-surface-variant);
+  border-color: var(--visionos-primary);
+  transform: translateY(-2px);
+}
+
+.action-button span {
+  font-size: 12px;
+  color: var(--visionos-text-secondary);
+}
+
+.save-button {
+  width: 100%;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.prompt-card {
+  width: 180px;
+  padding: 16px;
+  border-radius: var(--visionos-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prompt-card p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--visionos-text-primary);
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .journal-interface {
+    width: 350px;
+    padding: 24px;
+  }
+  
+  .mood-options {
+    gap: 8px;
+  }
+  
+  .mood-button {
+    min-width: 70px;
+    padding: 10px 12px;
+  }
+  
+  .action-buttons {
+    gap: 8px;
+  }
+  
+  .action-button {
+    min-width: 70px;
+    padding: 10px 12px;
+  }
+  
+  .prompt-card {
+    width: 150px;
+    padding: 12px;
+  }
+  
+  .prompt-card p {
+    font-size: 12px;
+  }
+}
